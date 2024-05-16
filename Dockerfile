@@ -19,4 +19,4 @@ COPY --from=builder /app ./
 # Expose the port that your app runs on
 EXPOSE 3050
 
-CMD ["npm", "start -- -p 3050"]
+CMD ["npm", "start", "--", "-p", "3050"]
