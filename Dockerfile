@@ -17,6 +17,6 @@ WORKDIR /app
 COPY --from=builder /app ./
 
 # Expose the port that your app runs on
-EXPOSE 3000
+EXPOSE 3050
 
-CMD ["npm", "start"]
+CMD ["npm", "start -- --port 3050"]
